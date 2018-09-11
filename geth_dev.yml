@@ -1,0 +1,9 @@
+---
+- hosts: geth_dev
+  become: true
+  become_method: sudo
+  gather_facts: no
+  environment:
+    PYTHONPATH: "{{ lookup('env','PYTHONPATH') }}:/usr/local/lib/python2.7/dist-packages:/usr/local/lib/python2.7/site-packages"
+  roles:
+    - pre_tasks
