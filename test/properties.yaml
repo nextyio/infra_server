@@ -1,0 +1,6 @@
+dev-server-geth:
+  :roles:
+    - 
+  :hostname: 133.133.33.23
+  :username: vagrant
+  :key: "../testing_server/geth/.vagrant/machines/default/virtualbox/private_key"

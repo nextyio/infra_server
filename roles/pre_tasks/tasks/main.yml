@@ -1,0 +1,6 @@
+---
+- name: Install python 2.7 for Ansible
+  raw: test -e /usr/bin/python2.7 || (apt -y update && apt install -y python2.7)
+  changed_when: False
+- name: Gather Facts
+  setup: # aka gather_facts
